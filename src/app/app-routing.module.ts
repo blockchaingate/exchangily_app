@@ -4,11 +4,14 @@ import { Routes } from "@angular/router";
 
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
+import { LandingPageComponent } from "./core/components/landing-page/landing-page.component";
+import { CreateWalletComponent } from "./core/components/create-wallet/create-wallet.component";
 
 const routes: Routes = [
-    { path: "", redirectTo: "/items", pathMatch: "full" },
-    { path: "items", component: ItemsComponent },
-    { path: "item/:id", component: ItemDetailComponent }
+    { path: "", redirectTo: "/landingpage", pathMatch: "full" },
+    { path: "landingpage", component: LandingPageComponent },
+    { path: "item/:id", component: ItemDetailComponent },
+    { path: "create-wallet", component: CreateWalletComponent }
 ];
 
 @NgModule({
