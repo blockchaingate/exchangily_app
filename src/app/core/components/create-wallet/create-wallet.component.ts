@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Page } from 'tns-core-modules/ui/page';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'create-wallet',
@@ -8,7 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class CreateWalletComponent implements OnInit {
-    constructor() { }
+    constructor(private page: Page, private router: Router) {
+        this.page.actionBarHidden = true;
+     }
 
-    ngOnInit() { }
+    ngOnInit() { 
+
+    }
+
+    createNewWalletClicked() {
+        //verify password and then navigate to show mnemonics
+        console.log("create new wallet clicked")
+        this.router.navigate(['show-mnemonics']);
+    }
 }
