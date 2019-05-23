@@ -17,7 +17,10 @@ export class ShowMnemonicsComponent implements OnInit {
     constructor(private page: Page) {
         let b: string = bip39.generateMnemonic()
         this.mnemonics.push(...(b.split(" ", 12)));
-        this.warning = "Please save this 12 mnemonic words."
+        this.warning = "Below are 12 mnemonics to help you recover your wallet."+
+                        "Please make sure the phone or password is safely stored, the 12"+
+                        "mnemonics you write on paper id the only way to recover your phone wallet."+
+                        "Please be sure to carefully write down these 12 words."
     }
 
     ngOnInit(): void {
