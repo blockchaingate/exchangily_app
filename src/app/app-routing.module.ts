@@ -8,6 +8,7 @@ import { LandingPageComponent } from "./core/components/landing-page/landing-pag
 import { CreateWalletComponent } from "./core/components/create-wallet/create-wallet.component";
 import { ShowMnemonicsComponent } from "./core/components/show-mnemonics/show-mnemonics.component";
 import { VerifyMnemonicsComponent } from "./core/components/verify-mnemonics/verify-mnemonics.component";
+import { ImportWalletComponent } from "./core/components/import-wallet/import-wallet.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/landingpage", pathMatch: "full" },
@@ -15,7 +16,8 @@ const routes: Routes = [
     { path: "item/:id", component: ItemDetailComponent },
     { path: "create-wallet", component: CreateWalletComponent },
     { path: "show-mnemonics", component: ShowMnemonicsComponent },
-    { path: "verify-mnemonics", component: VerifyMnemonicsComponent }
+    { path: "verify-mnemonics", component: VerifyMnemonicsComponent },
+    { path: "import-wallet", component: ImportWalletComponent}
 ];
 
 @NgModule({

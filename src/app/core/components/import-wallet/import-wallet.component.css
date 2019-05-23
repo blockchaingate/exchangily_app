@@ -1,0 +1,11 @@
+Label {
+    color:black;
+}
+
+.mnemonicTextField {
+    width:46%;
+    margin: 10px 2% 10px 2%;
+    color:black;
+    background-color: white;
+    border-radius: 15px;
+}
