@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { AppRoutingModule } from '../../../app-routing.module'
-import { Page } from "tns-core-modules/ui/page"
+import { Page } from "tns-core-modules/ui/page";
+import { Router } from "@angular/router";
 require("nativescript-nodeify");
 const bip39 = require("bip39");
 
@@ -14,7 +14,7 @@ export class ShowMnemonicsComponent implements OnInit {
 
     mnemonics: Array<string> = [];
     warning:string;
-    constructor(private page: Page) {
+    constructor(private page: Page, private router: Router) {
         let b: string = bip39.generateMnemonic()
         this.mnemonics.push(...(b.split(" ", 12)));
         this.warning = "Below are 12 mnemonics to help you recover your wallet."+
@@ -25,5 +25,9 @@ export class ShowMnemonicsComponent implements OnInit {
 
     ngOnInit(): void {
         this.page.actionBarHidden = true;
+    }
+
+    nextClicked(): void {
+        this.router.navigate(['verify-mnemonics']);
     }
 }

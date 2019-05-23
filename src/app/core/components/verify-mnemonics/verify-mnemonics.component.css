@@ -1,0 +1,12 @@
+TextField {
+    width:46%;
+    margin: 20px 2% 20px 2%;
+    color:black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+Label {
+    color:black;
+    font-size:18px;
+}

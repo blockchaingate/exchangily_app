@@ -8,6 +8,7 @@ import { ItemDetailComponent } from "./item/item-detail.component";
 import { LandingPageComponent } from "./core/components/landing-page/landing-page.component";
 import { CreateWalletComponent } from "./core/components/create-wallet/create-wallet.component";
 import { ShowMnemonicsComponent } from "./core/components/show-mnemonics/show-mnemonics.component";
+import { VerifyMnemonicsComponent } from "./core/components/verify-mnemonics/verify-mnemonics.component";
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
@@ -28,7 +29,8 @@ import { ShowMnemonicsComponent } from "./core/components/show-mnemonics/show-mn
         ItemDetailComponent,
         LandingPageComponent,
         CreateWalletComponent,
-        ShowMnemonicsComponent
+        ShowMnemonicsComponent,
+        VerifyMnemonicsComponent
     ],
     providers: [],
     schemas: [
