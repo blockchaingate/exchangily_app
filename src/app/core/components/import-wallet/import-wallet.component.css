@@ -9,3 +9,7 @@ Label {
     background-color: white;
     border-radius: 15px;
 }
+
+.mnemonicTextFieldIos {
+    height: 60px;
+}
