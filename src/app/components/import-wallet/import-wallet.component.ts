@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
 import { Router } from '@angular/router';
-import { android, ios } from 'tns-core-modules/application';
+import { android } from 'tns-core-modules/application';
+import { isAndroid } from "tns-core-modules/platform";
 
 @Component({
     selector: 'import-wallet',
@@ -16,13 +17,12 @@ export class ImportWalletComponent implements OnInit {
     constructor(private page: Page, private router: Router) {
         this.page.actionBarHidden = true;
 
-        if (this.page.android) {
+        if (isAndroid) {
             let activity = android.startActivity || android.foregroundActivity;
             activity.onBackPressed = function () {
                 console.log("back button pressed");
             }
         }
-
     }
 
     ngOnInit() {

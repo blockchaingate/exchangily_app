@@ -4,11 +4,11 @@ import { Routes } from "@angular/router";
 
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
-import { LandingPageComponent } from "./core/components/landing-page/landing-page.component";
-import { CreateWalletComponent } from "./core/components/create-wallet/create-wallet.component";
-import { ShowMnemonicsComponent } from "./core/components/show-mnemonics/show-mnemonics.component";
-import { VerifyMnemonicsComponent } from "./core/components/verify-mnemonics/verify-mnemonics.component";
-import { ImportWalletComponent } from "./core/components/import-wallet/import-wallet.component";
+import { LandingPageComponent } from "./components/landing-page/landing-page.component";
+import { CreateWalletComponent } from "./components/create-wallet/create-wallet.component";
+import { ShowMnemonicsComponent } from "./components/show-mnemonics/show-mnemonics.component";
+import { VerifyMnemonicsComponent } from "./components/verify-mnemonics/verify-mnemonics.component";
+import { ImportWalletComponent } from "./components/import-wallet/import-wallet.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/landingpage", pathMatch: "full" },

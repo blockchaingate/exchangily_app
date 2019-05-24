@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { AppRoutingModule } from '../../../app-routing.module'
+import { AppRoutingModule } from '../../app-routing.module';
 import { Page } from "tns-core-modules/ui/page"
 
 @Component({
