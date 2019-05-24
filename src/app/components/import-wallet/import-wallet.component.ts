@@ -19,9 +19,9 @@ export class ImportWalletComponent implements OnInit {
 
         if (isAndroid) {
             let activity = android.startActivity || android.foregroundActivity;
-            activity.onBackPressed = function () {
+            /*activity.onBackPressed = function () {
                 console.log("back button pressed");
-            }
+            }*/
         }
     }
 
