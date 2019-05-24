@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
 import { Router } from '@angular/router';
+import { android,ios } from 'tns-core-modules/application';
 
 @Component({
     selector: 'import-wallet',
@@ -14,6 +15,10 @@ export class ImportWalletComponent implements OnInit {
     enterMnemonicsMessage: string;
     constructor(private page: Page, private router: Router) {
         this.page.actionBarHidden = true;
+        let activity = android.startActivity || android.foregroundActivity;
+        activity.onBackPressed = function() {
+            console.log("back button pressed");
+        }
      }
 
     ngOnInit() { 
@@ -22,7 +27,7 @@ export class ImportWalletComponent implements OnInit {
 
     importWalletClicked() {
         //verify password and then navigate to show mnemonics
-        console.log("create new wallet clicked")
+       // console.log("create new wallet clicked")
         this.router.navigate(['show-mnemonics']);
     }
 }
