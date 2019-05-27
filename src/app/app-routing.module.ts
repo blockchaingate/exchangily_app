@@ -9,6 +9,7 @@ import { CreateWalletComponent } from "./components/create-wallet/create-wallet.
 import { ShowMnemonicsComponent } from "./components/show-mnemonics/show-mnemonics.component";
 import { VerifyMnemonicsComponent } from "./components/verify-mnemonics/verify-mnemonics.component";
 import { ImportWalletComponent } from "./components/import-wallet/import-wallet.component";
+import { AddAssetComponent } from "./components/add-asset/add-asset.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/landingpage", pathMatch: "full" },
@@ -17,7 +18,8 @@ const routes: Routes = [
     { path: "create-wallet", component: CreateWalletComponent },
     { path: "show-mnemonics", component: ShowMnemonicsComponent },
     { path: "verify-mnemonics", component: VerifyMnemonicsComponent },
-    { path: "import-wallet", component: ImportWalletComponent}
+    { path: "import-wallet", component: ImportWalletComponent},
+    { path: "add-asset", component: AddAssetComponent }
 ];
 
 @NgModule({

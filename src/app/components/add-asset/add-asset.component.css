@@ -1,0 +1,24 @@
+.top-section {
+    background: linear-gradient(90deg, rgba(106,8,216,1) 0%, rgba(249,170,15,1) 100%);
+    height:25%;
+    z-index: 1;
+}
+
+.middle-section {
+    height:20%;
+    width:80%;
+
+    margin-top: -10%;
+    margin-left:10%;
+    margin-right: 10%;
+    background: white;
+    z-index: 2;
+    border-radius:10pt;
+
+}
+
+.bottom-section {
+    background: rgb(235,235,235);
+
+
+}
