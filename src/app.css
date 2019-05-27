@@ -17,3 +17,10 @@ refer to http://docs.nativescript.org/ui/theme.
     color:white; 
     background: linear-gradient(90deg, rgba(106,8,216,1) 0%, rgba(249,170,15,1) 100%);
 }
+
+.font-awesome {
+        
+    src:url("fonts/fontawesome-webfont.ttf");
+    font-family: FontAwesome, fontawesome-webfont ;
+    
+}
