@@ -12,8 +12,8 @@ refer to http://docs.nativescript.org/ui/theme.
 @import '~nativescript-theme-core/css/core.light.css';
 
 .exchangilyBtn {
-    border-radius: 10%; 
-    margin:5px; 
+    border-radius: 10pt; 
+    margin:5pt; 
     color:white; 
     background: linear-gradient(90deg, rgba(106,8,216,1) 0%, rgba(249,170,15,1) 100%);
 }

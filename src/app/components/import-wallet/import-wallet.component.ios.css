@@ -3,9 +3,9 @@
 
 .mnemonicTextField {
     width:46%;
-    margin: 10px 2% 10px 2%;
+    margin: 10pt 2% 10pt 2%;
     color:black;
     background-color: white;
-    border-radius: 5px;
-    height: 60px;
+    border-radius: 5pt;
+    height: 60pt;
 }
