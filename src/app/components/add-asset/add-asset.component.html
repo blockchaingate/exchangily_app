@@ -1,4 +1,4 @@
-<AbsoluteLayout width=100% height=100%>
+<AbsoluteLayout width=100% >
 
     <StackLayout class="top-section" top=0% left=0% width=100% height=25%>
     </StackLayout>
@@ -34,23 +34,41 @@
         </StackLayout>
     </StackLayout>
     <StackLayout class="bottom-section" marginTop=25% left=0% width=100% height=75%>
-
+        
         <GridLayout rows="*" columns="*, *" marginTop=17% height=20pt>
             <StackLayout orientation=horizontal row="0" col="0">
                 <Label text="MY Assets" style="font-weight: bold;"></Label>
                 <Label class="font-awesome" text="&#xf021;" textWrap="true"></Label>
             </StackLayout>
-            <Label class="font-awesome"  text="&#xf067;" style="text-align:right; margin-right:20pt;" row="0" col="1"></Label>
+            <Label class="font-awesome" text="&#xf067;" style="text-align:right; margin-right:20pt;" row="0"
+                col="1"></Label>
         </GridLayout>
         <StackLayout height=2pt marginTop=10pt style="background-color: lightgray;" width=95%>
-            </StackLayout>
+        </StackLayout>
         <StackLayout orientation="horizontal" marginTop=-10>
-            <Switch [checked]=""  class="switch"></Switch>
-        <Label text="Hide Small Amount Assets" marginTop=17 marginLeft=-15 textWrap="true"></Label>
+            <Switch [checked]="" class="switch"></Switch>
+            <Label text="Hide Small Amount Assets" marginTop=17 marginLeft=-15 textWrap="true"></Label>
         </StackLayout>
 
-        <ScrollView>
-
+           
+               
+         
+                
+        <ScrollView height=60%>
+            <StackLayout>
+                <GridLayout *ngFor="let coin of coinList" rows="auto, auto, auto" columns="*, *, *" style="background:white;" marginLeft=10
+                    marginRight=10 marginTop=10>
+                    <Label text={{coin.name}} style="font-weight: bold;" row="0" col="0"></Label>
+                    <Label text="" row="0" col="1"></Label>
+                    <Label text="" row="0" col="2"></Label>
+                    <Label text="Available" style="color:gray; font-size:12;" row="1" col="0"></Label>
+                    <Label text="Frozen" style="color:gray; font-size:12;" row="1" col="1"></Label>
+                    <Label text="Value (USD)" style="color:gray; font-size:12;" row="1" col="2"></Label>
+                    <Label text={{coin.available}} row="2" col="0"></Label>
+                    <Label text={{coin.frozen}} row="2" col="1"></Label>
+                    <Label text={{coin.value}} row="2" col="2"></Label>
+                </GridLayout>          
+          </StackLayout>
         </ScrollView>
     </StackLayout>
 </AbsoluteLayout>
