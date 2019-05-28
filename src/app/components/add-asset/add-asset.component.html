@@ -1,4 +1,4 @@
-<AbsoluteLayout width=100% >
+<AbsoluteLayout width=100%  >
 
     <StackLayout class="top-section" top=0% left=0% width=100% height=25%>
     </StackLayout>
@@ -54,7 +54,7 @@
                
          
                 
-        <ScrollView height=60%>
+        <ScrollView height=50% >
             <StackLayout>
                 <GridLayout *ngFor="let coin of coinList" rows="auto, auto, auto" columns="*, *, *" style="background:white;" marginLeft=10
                     marginRight=10 marginTop=10>
@@ -70,5 +70,13 @@
                 </GridLayout>          
           </StackLayout>
         </ScrollView>
+
+    </StackLayout>
+
+    <StackLayout orientation="horizontal"  marginTop=90% width=100% height=10% style="background:white;" >
+        <Button style="background: white;" width="25%" class="font-awesome" text="&#xf1ee; &#13; wallet" ></Button>
+        <Button style="background: white;" width="25%" class="font-awesome" text="&#xf080; &#13;  Market" ></Button>
+        <Button style="background: white;" width="25%" class="font-awesome" text="&#xf021; &#13; Trade" ></Button>
+        <Button style="background: white;" width="25%" class="font-awesome" text="&#xf013; &#13;  Settings" ></Button>
     </StackLayout>
 </AbsoluteLayout>

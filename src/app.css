@@ -20,7 +20,7 @@ refer to http://docs.nativescript.org/ui/theme.
 
 .font-awesome {
         
-    src:url("fonts/fontawesome-webfont.ttf");
+    src:url("fonts/fa-solid-900.ttf");
     font-family: FontAwesome, fontawesome-webfont ;
     
 }
