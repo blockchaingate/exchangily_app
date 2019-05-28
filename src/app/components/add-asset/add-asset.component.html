@@ -1,30 +1,44 @@
-<AbsoluteLayout width=100% height=100% >
-    
+<AbsoluteLayout width=100% height=100%>
 
-<StackLayout  class="top-section"  top=0% left=0% width=100% height=25%>
 
-</StackLayout>
-<StackLayout  class="middle-section"  marginLeft=10% marginTop=15%  width=80% height=20%>
-<StackLayout orientation="horizontal"> 
-    <label width=50% text="My Total Balance"></label> 
-    <StackLayout width=50%>
-        <Label text="EXG 1294721.29" textWrap="true"></Label>
-        <Label text="=51029872 USD" textWrap="true"></Label>
+    <StackLayout class="top-section" top=0% left=0% width=100% height=25%>
+
+    </StackLayout>
+    <StackLayout class="middle-section" marginLeft=10% marginTop=15% width=80% height=20%>
+        <StackLayout orientation="horizontal">
+            <label width=50% text="My Total Balance"></label>
+            <StackLayout width=50%>
+                <Label text="EXG 1294721.29" textWrap="true"></Label>
+                <Label text="=51029872 USD" textWrap="true"></Label>
+            </StackLayout>
+
+        </StackLayout>
+        <StackLayout height=2pt style="background-color: lightgray;" width=90%>
+
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <StackLayout width=33% >
+                <Label horizontalAlignment="center" text="Receive" textWrap="true"></Label>
+                <Label class="font-awesome iconBtn" horizontalAlignment="center" text="&#xf019;"
+                    textWrap="true"></Label>
+            </StackLayout>
+            <StackLayout width=33%>
+                <Label horizontalAlignment="center" text="Send" textWrap="true"></Label>
+                <Label class="font-awesome iconBtn" horizontalAlignment="center" text="&#xf1d8;"
+                    textWrap="true"></Label>
+            </StackLayout>
+            <StackLayout width=33%>
+                <Label horizontalAlignment="center" text="Exchange" textWrap="true"></Label>
+                <Label class="font-awesome iconBtn" horizontalAlignment="center" text="&#xf021;"
+                    textWrap="true"></Label>
+            </StackLayout>
+            <Label text="Receive" VerticalAlignment="center" textWrap="true" width=33%></Label>
+            <Label text="Send" textWrap="true" width=33%></Label>
+            <Label text="exchange" textWrap="true" width=33%></Label>
+        </StackLayout>
     </StackLayout>
 
-</StackLayout>
-<StackLayout height=2pt style="background-color: lightgray;" width=90%>
-    
-</StackLayout>
-<StackLayout orientation="horizontal">
-    <button class="font-awesome" text="&#xf019; &#13;&#10;"></button>
-    <Label text="Receive" VerticalAlignment="center" textWrap="true" width=33%></Label>
-    <Label text="Send" textWrap="true" width=33%></Label>
-    <Label text="exchange" textWrap="true" width=33%></Label>
-</StackLayout>
-</StackLayout>
+    <StackLayout class="bottom-section" marginTop=25% left=0% width=100% height=75%>
 
-<StackLayout  class="bottom-section" marginTop=25% left=0% width=100% height=75% >
-
-</StackLayout>
+    </StackLayout>
 </AbsoluteLayout>

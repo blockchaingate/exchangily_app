@@ -28,3 +28,14 @@ Label {
     margin-top:5pt;
     margin-left:10pt;
 }
+
+.iconBtn {
+    font-size: 30pt;
+    background-color: lightgray;
+    border-color: transparent;
+    padding:10pt;
+    border-radius:30pt;
+    
+
+
+}
