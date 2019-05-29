@@ -1,16 +1,21 @@
-<StackLayout style="background:lightgray;">
+<StackLayout style="background:rgb(230,230,230);">
     <ActionBar title="{{title}}" icon="" class="action-bar">
     </ActionBar>
     <ScrollView height=90% >
         <StackLayout >
             <StackLayout *ngFor="let item of history" marginTop=3 style="background:white; padding:15; color:black;">
-                <StackLayout orientation="horizontal">
+
+                <GridLayout rows="*, *" columns="*, *">
+                    
+                <StackLayout orientation="horizontal" row="0" col="0">
                     <Label text="{{item.type}}" *ngIf="(item.type === 'Send')" style="color:rgb(200,150,0); font-size:20; font-weight:bold;"  textWrap="true"></Label>
                     <Label text="{{item.type}}" *ngIf="(item.type === 'Receive')" style="color:rgb(0,200,0); font-size:20; font-weight:bold;"  textWrap="true"></Label> 
                     <!--<Label text="{{item.type}}" style="{{(item.type === 'Send')? 'color:rgb(200,150,0)' : 'color:rgb(0,200,0)'}} ; font-size:20; font-weight:bold;"  textWrap="true"></Label>-->
                     <Label text="{{item.name}}" style="font-size:20; font-weight:bold;" marginLeft=10 textWrap="true"></Label>
                 </StackLayout>
-                
+                <Label class="font-awesome" style="font-size:30; color:gray;" text="&#xf105;" horizontalAlignment=right textWrap="true" row="0" col="1"></Label>
+                    <!--<Label text="0, 1" row="0" col="1"></Label>-->
+            </GridLayout>
                 <Label text="Time : {{item.date}}" style="margin-top:10;" textWrap="true"></Label>
                 <Label text="Transaction total amount : {{item.amount}} {{item.name}}" style="margin-top:5;" textWrap="true"></Label>
                 <Label text="Comment : {{item.comment}}" textWrap="true" style="margin-top:5;"></Label>
@@ -18,9 +23,9 @@
         </StackLayout>
     </ScrollView>
 
-    <GridLayout rows="auto" columns="*, *, *">
-        <Label style="text-align: center;" text="<-" row="0" col="0"></Label>
-        <Label style="text-align: center;" text="Page 1" row="0" col="1"></Label>
-        <Label style="text-align: center;" text="->" row="0" col="2"></Label>
+    <GridLayout rows="auto" columns="*, *, *" height=10% style="color:rgb(50,50,50);">
+        <Label style="text-align: center; margin-top:25%; font-size:25;" class="font-awesome" text="&#xf060;" row="0" col="0"></Label>
+        <Label style="text-align: center; margin-top:25%; font-size:15;" text="Page 1" row="0" col="1"></Label>
+        <Label style="text-align: center; margin-top:25%; font-size:25;" class="font-awesome" text="&#xf061;" row="0" col="2"></Label>
     </GridLayout>
 </StackLayout>
