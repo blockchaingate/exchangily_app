@@ -14,43 +14,73 @@ import { isAndroid } from 'tns-core-modules/platform';
 
 export class TransactionHistoryComponent implements OnInit {
 
-    public coinList: Array<any> = [];
+    public history: Array<any> = [];
+
+    private title: string ;
     constructor(private page: Page, private router: Router) {
-        page.actionBarHidden = true;
+
+        this.title = "Wallet Transaction History"
+        //page.actionBarHidden = true;
         if (isAndroid) {
             let activity = android.startActivity || android.foregroundActivity;
         }
 
-        this.coinList.push(
+        this.history.push(
             {
+                type: "Send",
                 name: "EXG",
-                available: 19203.29302012,
-                frozen: 2000,
-                value: 389310.28
+                date: '2019/04/28',
+                amount: 3000,
+                comment: 'Send from Mary for rewards'
             },
             {
-                name: "BTC",
-                available: 19203.29302012,
-                frozen: 0.0000,
-                value: 389310.28
+                type: "Receive",
+                name: "EXG",
+                date: '2019/04/28',
+                amount: 3000,
+                comment: 'Send from Mary for rewards'
             },
             {
-                name: "FAB",
-                available: 19203.29302012,
-                frozen: 100000.00,
-                value: 389310.28
+                type: "Send",
+                name: "EXG",
+                date: '2019/04/28',
+                amount: 3000,
+                comment: 'Send from Mary for rewards'
             },
             {
-                name: "FAB",
-                available: 19203.29302012,
-                frozen: 100000.00,
-                value: 389310.28
+                type: "Receive",
+                name: "EXG",
+                date: '2019/04/28',
+                amount: 3000,
+                comment: 'Send from Mary for rewards'
             },
             {
-                name: "FAB",
-                available: 19203.29302012,
-                frozen: 100000.00,
-                value: 389310.28
+                type: "Send",
+                name: "EXG",
+                date: '2019/04/28',
+                amount: 3000,
+                comment: 'Send from Mary for rewards'
+            },
+            {
+                type: "Receive",
+                name: "EXG",
+                date: '2019/04/28',
+                amount: 3000,
+                comment: 'Send from Mary for rewards'
+            },
+            {
+                type: "Send",
+                name: "EXG",
+                date: '2019/04/28',
+                amount: 3000,
+                comment: 'Send from Mary for rewards'
+            },
+            {
+                type: "Send",
+                name: "EXG",
+                date: '2019/04/28',
+                amount: 3000,
+                comment: 'Send from Mary for rewards'
             }
         )
 
