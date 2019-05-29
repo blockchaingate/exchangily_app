@@ -12,6 +12,7 @@ import { VerifyMnemonicsComponent } from "./components/verify-mnemonics/verify-m
 import { ImportWalletComponent } from "./components/import-wallet/import-wallet.component";
 import { MyAssetsComponent } from "./components/my-assets/my-assets.component";
 import { TransactionHistoryComponent } from "./components/transaction-history/transaction-history.component";
+import { TransactionHistoryItemComponent } from "./components/transaction-history-item/transaction-history-item.component";
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
@@ -36,7 +37,8 @@ import { TransactionHistoryComponent } from "./components/transaction-history/tr
         VerifyMnemonicsComponent,
         ImportWalletComponent,
         MyAssetsComponent,
-        TransactionHistoryComponent
+        TransactionHistoryComponent,
+        TransactionHistoryItemComponent
     ],
     providers: [],
     schemas: [

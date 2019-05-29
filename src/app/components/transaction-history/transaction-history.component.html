@@ -3,10 +3,8 @@
     </ActionBar>
     <ScrollView height=90% >
         <StackLayout >
-            <StackLayout *ngFor="let item of history" marginTop=3 style="background:white; padding:15; color:black;">
-
+            <StackLayout *ngFor="let item of history" marginTop=3 style="background:white; padding:15; color:black;" [nsRouterLink]="['/transaction-history-item', item.type]">
                 <GridLayout rows="*, *" columns="*, *">
-                    
                 <StackLayout orientation="horizontal" row="0" col="0">
                     <Label text="{{item.type}}" *ngIf="(item.type === 'Send')" style="color:rgb(200,150,0); font-size:20; font-weight:bold;"  textWrap="true"></Label>
                     <Label text="{{item.type}}" *ngIf="(item.type === 'Receive')" style="color:rgb(0,200,0); font-size:20; font-weight:bold;"  textWrap="true"></Label> 
@@ -22,7 +20,6 @@
             </StackLayout>
         </StackLayout>
     </ScrollView>
-
     <GridLayout rows="auto" columns="*, *, *" height=10% style="color:rgb(50,50,50);">
         <Label style="text-align: center; margin-top:25%; font-size:25;" class="font-awesome" text="&#xf060;" row="0" col="0"></Label>
         <Label style="text-align: center; margin-top:25%; font-size:15;" text="Page 1" row="0" col="1"></Label>
