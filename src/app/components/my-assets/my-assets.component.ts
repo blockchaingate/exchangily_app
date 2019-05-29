@@ -6,13 +6,13 @@ import { isAndroid } from 'tns-core-modules/platform';
 
 
 @Component({
-    selector: 'add-asset',
+    selector: 'my-assets',
     moduleId: module.id,
-    templateUrl: './add-asset.component.html',
-    styleUrls: ['./add-asset.component.css']
+    templateUrl: './my-assets.component.html',
+    styleUrls: ['./my-assets.component.css']
 })
 
-export class AddAssetComponent implements OnInit {
+export class MyAssetsComponent implements OnInit {
 
     public coinList: Array<any> = [];
     constructor(private page: Page, private router: Router) {
@@ -58,8 +58,8 @@ export class AddAssetComponent implements OnInit {
     /**/
 
     ngOnInit() {
-        console.log("add asset component")
-        console.log(this.page.getActualSize());
+        //console.log("my assets component")
+        //console.log(this.page.getActualSize());
 
     }
 }
