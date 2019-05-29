@@ -17,14 +17,16 @@ export class TransactionHistoryItemComponent implements OnInit {
     public history: Array<any> = [];
 
     private title: string ;
+    private transactionType : string;
     constructor(private page: Page, private route: ActivatedRoute) {
         this.title = "Wallet Transaction History"
+        this.transactionType = route.snapshot.params.type;
         //page.actionBarHidden = true;
     }
     /**/
 
     ngOnInit() {
-        console.log(this.route.snapshot.params.type)
+        console.log(this.transactionType)
 
     }
 }
