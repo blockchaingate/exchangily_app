@@ -18,6 +18,10 @@ export class TransactionHistoryItemComponent implements OnInit {
 
     private title: string ;
     private transactionType : string;
+    private currencyName : string;
+    private transactionDate : string;
+    private transactionAmount : string;
+    private transactionComment : string;
     constructor(private page: Page, private route: ActivatedRoute) {
         this.title = "Wallet Transaction History"
         this.transactionType = route.snapshot.params.type;
@@ -31,6 +35,12 @@ export class TransactionHistoryItemComponent implements OnInit {
             //
            // console.log( d )
             this.transactionType = d.type;
+            this.currencyName = d.name;
+            this.transactionDate = d.date;
+            this.transactionAmount = d.amount;
+            this.transactionComment = d.comment;
+            //amount
+            //comment
         }))
     }
 }

@@ -1,7 +1,57 @@
 <ActionBar title="{{this.title}}" icon="" class="action-bar">
 </ActionBar>
-<StackLayout margin=20>
-    <Label *ngIf="this.transactionType==='Send'" style="font-size: 20; font-weight:bold; color:orange;" text="{{this.transactionType}}" textWrap="true"></Label>
-    <Label *ngIf="this.transactionType==='Receive'" style="font-size: 20; font-weight:bold; color:green;" text="{{this.transactionType}}" textWrap="true"></Label>
-    
+<StackLayout margin=20 style="font-size: 15; background:white;">
+
+    <StackLayout orientation="horizontal">
+        <Label *ngIf="this.transactionType==='Send'" style="font-size: 20; font-weight:bold; color:orange;"
+            text="{{this.transactionType}}" textWrap="true"></Label>
+        <Label *ngIf="this.transactionType==='Receive'" style="font-size: 20; font-weight:bold; color:green;"
+            text="{{this.transactionType}}" textWrap="true"></Label>
+        <Label style="font-size: 20; font-weight:bold; color:black; margin-left:20;" text="{{this.currencyName}}"
+            textWrap="true"></Label>
+    </StackLayout>
+    <StackLayout orientation="horizontal" marginTop=20>
+        <Label text="Date" style="color:gray;" textWrap="true"></Label>
+        <Label text="{{transactionDate}}" style="color:black; margin-left:20;" textWrap="true"></Label>
+    </StackLayout>
+    <StackLayout orientation="horizontal" marginTop=10>
+        <Label text="Transaction Total Amount" style="color:gray;" textWrap="true"></Label>
+        <Label text="{{transactionAmount}}" style="color:black; margin-left:20;" textWrap="true"></Label>
+    </StackLayout>
+    <StackLayout orientation="horizontal" marginTop=10>
+        <Label text="Currency" style="color:gray;" textWrap="true"></Label>
+        <Label text="{{currencyName}}" style="color:black; margin-left:20;" textWrap="true"></Label>
+    </StackLayout>
+    <StackLayout orientation="horizontal" marginTop=10>
+        <Label text="Transaction Fee" style="color:gray;" textWrap="true"></Label>
+        <Label text="0.000033" style="color:black; margin-left:20;" textWrap="true"></Label>
+    </StackLayout>
+    <StackLayout style="background: gray; height:2; width:100%; margin-top:10;">
+    </StackLayout>
+    <StackLayout orientation="horizontal" marginTop=10>
+        <Label text="Send to:" style="color:gray;" textWrap="true"></Label>
+        <Label class="font-awesome" style="color:gray; margin-left:10;" text="&#xf0c5;" textWrap="true"></Label>
+    </StackLayout>
+    <Label text="1JmwUFbpRZaUa7KaGvpyMXTA6FBDDqRj43" style="color:black; margin-top:5;" textWrap="true"></Label>
+    <StackLayout orientation="horizontal" marginTop=10>
+        <Label text="Transaction Id:" style="color:gray;" textWrap="true"></Label>
+        <Label class="font-awesome" style="color:gray; margin-left:10;" text="&#xf0c5;" textWrap="true"></Label>
+    </StackLayout>
+    <Label text="b86e6efeed715e1eroin9swluctus432sempiobortis61c32semper06lobortis6lobortis6m5a856"
+        style="color:black; margin-top:5;" textWrap="true"></Label>
+    <StackLayout orientation="horizontal" marginTop=10>
+        <Label text="Confirmations:" style="color:gray;" textWrap="true"></Label>
+        <Label style="color:black; margin-left:10;" text="125881" textWrap="true"></Label>
+    </StackLayout>
+    <StackLayout orientation="horizontal" marginTop=10>
+        <Label text="Block Hash:" style="color:gray;" textWrap="true"></Label>
+        <Label class="font-awesome" style="color:gray; margin-left:10;" text="&#xf0c5;" textWrap="true"></Label>
+    </StackLayout>
+    <Label text="000000be1eroin9swluctus432semper06lobortis61c32semper06lobortis6lobortis6mper0"
+        style="color:black; margin-top:5;" textWrap="true"></Label>
+   
+        <Label text="Comment:" style="color:gray;" marginTop=10 textWrap="true"></Label>
+        <Label style="color:black; " marginTop=5 text="{{transactionComment}}" textWrap="true"></Label>
+ 
+
 </StackLayout>
