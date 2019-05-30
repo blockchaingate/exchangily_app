@@ -26,7 +26,11 @@ export class TransactionHistoryItemComponent implements OnInit {
     /**/
 
     ngOnInit() {
-        console.log(this.transactionType)
-
+       // console.log(this.transactionType)
+        (this.route.queryParams.subscribe(d => {
+            //
+           // console.log( d )
+            this.transactionType = d.type;
+        }))
     }
 }

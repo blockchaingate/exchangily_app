@@ -23,7 +23,8 @@ const routes: Routes = [
     { path: "import-wallet", component: ImportWalletComponent},
     { path: "my-assets", component: MyAssetsComponent },
     { path: "transaction-history", component: TransactionHistoryComponent},
-    { path: "transaction-history-item/:type", component: TransactionHistoryItemComponent }
+    /*{ path: "transaction-history-item/:type", component: TransactionHistoryItemComponent }*/
+    { path: "transaction-history-item", component: TransactionHistoryItemComponent}
 ];
 
 @NgModule({

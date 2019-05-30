@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-import { Router } from '@angular/router';
+import { Router, NavigationExtras } from '@angular/router';
 import { android } from 'tns-core-modules/application';
 import { isAndroid } from 'tns-core-modules/platform';
 
@@ -91,5 +91,13 @@ export class TransactionHistoryComponent implements OnInit {
         //console.log("my assets component")
         //console.log(this.page.getActualSize());
 
+    }
+
+    onTap(args) {
+       // console.log(args)
+        let navigationExtras: NavigationExtras = {
+            queryParams: args
+        } 
+        this.router.navigate(['/transaction-history-item'],navigationExtras);
     }
 }

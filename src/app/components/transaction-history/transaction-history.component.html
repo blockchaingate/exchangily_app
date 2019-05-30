@@ -3,7 +3,8 @@
     </ActionBar>
     <ScrollView height=90% >
         <StackLayout >
-            <StackLayout *ngFor="let item of history" marginTop=3 style="background:white; padding:15; color:black;" [nsRouterLink]="['/transaction-history-item', item.type]">
+           <!-- <StackLayout *ngFor="let item of history" marginTop=3 style="background:white; padding:15; color:black;" [nsRouterLink]="['/transaction-history-item', item.type]"> -->
+            <StackLayout *ngFor="let item of history" marginTop=3 style="background:white; padding:15; color:black;" (tap)="onTap(item)">
                 <GridLayout rows="*, *" columns="*, *">
                 <StackLayout orientation="horizontal" row="0" col="0">
                     <Label text="{{item.type}}" *ngIf="(item.type === 'Send')" style="color:rgb(200,150,0); font-size:20; font-weight:bold;"  textWrap="true"></Label>
