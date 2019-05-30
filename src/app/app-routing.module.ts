@@ -12,6 +12,7 @@ import { ImportWalletComponent } from "./components/import-wallet/import-wallet.
 import { MyAssetsComponent } from "./components/my-assets/my-assets.component";
 import { TransactionHistoryComponent } from "./components/transaction-history/transaction-history.component";
 import { TransactionHistoryItemComponent } from './components/transaction-history-item/transaction-history-item.component';
+import { SendComponent } from './components/send/send.component';
 
 const routes: Routes = [
     { path: "", redirectTo: "/landingpage", pathMatch: "full" },
@@ -24,7 +25,8 @@ const routes: Routes = [
     { path: "my-assets", component: MyAssetsComponent },
     { path: "transaction-history", component: TransactionHistoryComponent},
     /*{ path: "transaction-history-item/:type", component: TransactionHistoryItemComponent }*/
-    { path: "transaction-history-item", component: TransactionHistoryItemComponent}
+    { path: "transaction-history-item", component: TransactionHistoryItemComponent},
+    { path: "send", component: SendComponent }
 ];
 
 @NgModule({

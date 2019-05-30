@@ -13,6 +13,8 @@ import { ImportWalletComponent } from "./components/import-wallet/import-wallet.
 import { MyAssetsComponent } from "./components/my-assets/my-assets.component";
 import { TransactionHistoryComponent } from "./components/transaction-history/transaction-history.component";
 import { TransactionHistoryItemComponent } from "./components/transaction-history-item/transaction-history-item.component";
+import { SendComponent } from "./components/send/send.component";
+import { DropDownModule } from "nativescript-drop-down/angular";
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
@@ -25,7 +27,8 @@ import { TransactionHistoryItemComponent } from "./components/transaction-histor
     ],
     imports: [
         NativeScriptModule,
-        AppRoutingModule
+        AppRoutingModule,
+        DropDownModule
     ],
     declarations: [
         AppComponent,
@@ -38,7 +41,8 @@ import { TransactionHistoryItemComponent } from "./components/transaction-histor
         ImportWalletComponent,
         MyAssetsComponent,
         TransactionHistoryComponent,
-        TransactionHistoryItemComponent
+        TransactionHistoryItemComponent,
+        SendComponent
     ],
     providers: [],
     schemas: [

@@ -23,6 +23,7 @@
     "@angular/router": "~7.2.0",
     "bip39": "^3.0.2",
     "nativescript-angular": "~7.2.0",
+    "nativescript-drop-down": "^5.0.0",
     "nativescript-nodeify": "^0.8.0",
     "nativescript-theme-core": "~1.0.4",
     "reflect-metadata": "~0.1.12",

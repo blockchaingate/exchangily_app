@@ -1,0 +1,47 @@
+<Page loaded="pageLoaded" xmlns:dd="nativescript-drop-down">
+    <ActionBar title="{{title}}" icon="" class="action-bar">
+    </ActionBar>
+
+    <StackLayout style="background:rgb(240,240,240);">
+        <StackLayout>
+            
+       
+        <StackLayout orientation="horizontal" style="background:white;" padding=10>
+            <Label class="font-awesome" width=10% style="font-size: 30;" text="&#xf0ea;" textWrap="true"></Label>
+            <TextField hint="Wallet Address" width=90%></TextField>
+
+        </StackLayout>
+        <StackLayout style="font-size:15;color:black; background:white;" marginTop=5 >
+    
+        <Label text="Currency"  textWrap="true" marginTop=10 marginLeft=10></Label>
+        <StackLayout style="border-width: 1; border-radius: 4;  border-color:black; " width=50% horizontalAlignment='left'  marginTop=5 marginBottom=10 marginLeft=10>
+             <DropDown #dd [items]="currencyNames" margin=5 ></DropDown>
+        </StackLayout>
+               
+        </StackLayout>
+    
+        <StackLayout marginTop=5  style="font-size:15;color:black; background:white;">
+            
+       
+        <TextField margin=10 hint="0.00000" ></TextField>
+        
+        <StackLayout orientation="horizontal" marginLeft=10 marginBottom=10>
+            <Label text="Balance: " style="font-size:15; color:black;" textWrap="true"></Label>
+            <Label text="602849.000" style="font-size:15; color:black;"  textWrap="true"></Label>
+            <Label text=" EXG" style="font-size:15; color:black;"  textWrap="true"></Label>
+            
+        </StackLayout>
+        </StackLayout>
+        <StackLayout orientation="horizontal" marginTop=20 marginLeft=20>
+            <Label text="Gas Fee  " style="font-size:15; color:black;" textWrap="true"></Label>
+            <Label text="0.000033" style="font-size:15; color:black;" textWrap="true"></Label>
+        </StackLayout>
+
+        <StackLayout orientation="horizontal" marginLeft=20 marginBottom=20>
+            <Label text="Advanced" textWrap="true" style="color:black; font-size:15; margin-top: 15;" ></Label>
+            <Switch  class="switch"></Switch>
+            
+        </StackLayout>
+        <button style="margin-top:20px;" class="exchangilyBtn" text="Send"   ></button>
+    </StackLayout> 
+</StackLayout>
